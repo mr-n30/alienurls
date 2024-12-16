@@ -1,15 +1,24 @@
 # alienurls
+
 Fetch all URL's from [Alien Vault OTX](https://otx.alienvault.com/) API
 
-# Installation
-```
+---
+
+## Installation
+```sh
 pip install requests
 ```
 
-# Usage
-```
-python alienurls.py -d example.com
+---
+
+## Usage
+```sh
+python3 alienurls.py -d example.com
 ```
 
-# Hello, World!
-Thank you for using!
+---
+
+## Thank you for using!
+```
+Feel free to send a PR! 
+```
