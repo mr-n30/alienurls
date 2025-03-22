@@ -34,7 +34,7 @@ def main() -> None:
             break
 
         for url in urls:
-            print(url.get("url"))
+            print(url.get("url", "").encode("utf-8", "ignore").decode())
 
         page += 1
         time.sleep(sleep_duration)
