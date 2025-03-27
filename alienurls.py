@@ -2,6 +2,10 @@
 import time
 import requests
 import argparse
+import sys
+
+# Force UTF-8 output for Windows to avoid encoding errors
+sys.stdout.reconfigure(encoding='utf-8')
 
 def main() -> None:
     # Set up argument parsing
@@ -34,7 +38,7 @@ def main() -> None:
             break
 
         for url in urls:
-            print(url.get("url", "").encode("utf-8", "ignore").decode())
+            print(url.get("url", "").encode("utf-8", "ignore").decode('utf-8', 'ignore'))
 
         page += 1
         time.sleep(sleep_duration)
